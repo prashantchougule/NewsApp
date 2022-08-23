@@ -31,6 +31,7 @@ class NewsListViewModel @Inject constructor(
                     newsResponse.let {
                     val news = it.newsList
                     _viewState.postValue(NewsListUIState.Content(
+                        //This transformation can be done using mapper in Data layer
                         news.map {
                             NewsItemUIState(
                                 it.author,
