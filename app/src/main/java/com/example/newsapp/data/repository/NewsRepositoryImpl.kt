@@ -7,8 +7,8 @@ import com.example.newsapp.presentation.uistate.NewsItemUIState
 import javax.inject.Inject
 
 class NewsRepositoryImpl @Inject constructor(val api: NewsService): NewsRepository {
-    override suspend fun getNews(accessKey:String): List<NewsItemUIState>  {
-        val result = api.getNews(accessKey)
-        return result.map(NewsMapper.map(it))
+    override suspend fun getNews(accessKey:String):NewsResponse  {
+        return api.getNews(accessKey)
+//        return result.map(NewsMapper.map(it))
     }
 }

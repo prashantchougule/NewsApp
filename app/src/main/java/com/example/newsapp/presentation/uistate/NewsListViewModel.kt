@@ -2,7 +2,6 @@ package com.example.newsapp.presentation.uistate
 
 import androidx.lifecycle.*
 import com.example.newsapp.BuildConfig.API_KEY
-import com.example.newsapp.R
 import com.example.newsapp.domain.GetNewsUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
